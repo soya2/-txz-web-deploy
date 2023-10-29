@@ -16,6 +16,7 @@
   },
   "author": "soya",
   "license": "ISC",
+  "access": "public",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.0",
     "@jest/globals": "^29.7.0",
