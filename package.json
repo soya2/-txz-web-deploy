@@ -1,5 +1,5 @@
 {
-  "name": "@txz/web-deploy",
+  "name": "txz-web-deploy",
   "version": "0.0.1",
   "description": "txz web deploy scripts",
   "main": "main.js",
