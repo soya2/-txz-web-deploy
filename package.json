@@ -1,6 +1,6 @@
 {
   "name": "txz-web-deploy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "txz web deploy scripts",
   "main": "main.js",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "type": "module",
   "bin": {
-    "txz-deploy": "./src/main.js"
+    "txz-web-deploy": "src/main.js"
   },
   "scripts": {
     "test": "jest"

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import Path from "node:path";
 import {OssServer} from "./servers/oss.js";
 import {FTPServer} from "./servers/ftp.js";

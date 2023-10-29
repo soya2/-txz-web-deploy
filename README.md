@@ -1,10 +1,10 @@
-# @txz/web-deploy
+# txz-web-deploy
 **This package is under testing, please do not use it in production environment.**  
 
 This npm package is for txz company and supports transferring files to ftp and ali-oss servers.
 ### install
 ```shell
-npm install @txz/web-deploy
+npm install txz-web-deploy
 ```
 
 ### usage
@@ -46,10 +46,10 @@ export default {
 ```
 run command, your configuration will be merged with the default configuration.
 ```shell
-@txz/web-deploy <CUSTOM_ENV_NAME> <DECRYPT_KEY>
+txz-web-deploy <CUSTOM_ENV_NAME> <DECRYPT_KEY>
 # the following command means to use the ftp server of the test environment
 # and use"TEST_KEY" to decrypt configuration.
-@txz/web-deploy test TEST_KEY
+txz-web-deploy test TEST_KEY
 ```
 If there is no problem with your configuration, then you will see the deployment process and results.
 
