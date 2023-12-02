@@ -1,7 +1,7 @@
 import path from "node:path";
 import {describe, expect, test} from "@jest/globals";
 import {Config} from "../../src/config/Config.js";
-import testConfig from "../utils/testConfig.js";
+import testConfig from "../utils/test.config.js";
 
 describe("Config class tests", () => {
   test("init tests", () => {

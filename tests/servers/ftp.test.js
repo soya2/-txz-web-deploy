@@ -1,6 +1,6 @@
 import {describe, expect, test} from "@jest/globals";
 import {FTPServer} from "../../src/servers/ftp.js";
-import testConfig from "../utils/testConfig.js";
+import testConfig from "../utils/test.config.js";
 
 describe("ftp servers tests", () => {
   test("init tests", () => {
