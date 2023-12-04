@@ -1,7 +1,7 @@
 import {describe, expect, test} from "@jest/globals";
 import {deepMerge} from "src/utils/common.js"
 import defaultConfig from "../../src/config/default.config.js";
-import testConfig from "./testConfig.js";
+import testConfig from "./test.config.js";
 
 describe("common utils tests", () => {
   test("deep merge test", () => {

@@ -1,6 +1,6 @@
 import {describe, expect, test} from "@jest/globals";
 import {OssServer} from "../../src/servers/oss.js";
-import testConfig from "../utils/testConfig.js";
+import testConfig from "../utils/test.config.js";
 
 describe("oss servers tests", () => {
   test("init tests", () => {
