@@ -104,9 +104,9 @@ If there is no problem with your configuration, then you will see the deployment
 + **ftpConfig**:  
   Not required, if it doesn't exist, just a waring log will be printed to remind you.
   + **ftpConfig.excludes**:  
-    Array<string> type, default is `[]`, file extname in this array will not be uploaded. Extname needs to be prefixed with `.`, such as `[".html"]`. **if `ossConfig.includes` is set, this will be invalid.**
+    Array<string> type, default is `[]`, file extname in this array will not be uploaded. Extname needs to be prefixed with `.`, such as `[".html"]`. **if `ftpConfig.includes` is set, this will be invalid.**
   + **ftpConfig.includes**:  
-    Array<string> type, default is `[]`, only file with extname in the array will be uploaded. Extname needs to be prefixed with `.`, such as `[".html"]`. **if this is set, `ossConfig.excludes` will be invalid.**
+    Array<string> type, default is `[]`, only file with extname in the array will be uploaded. Extname needs to be prefixed with `.`, such as `[".html"]`. **if this is set, `ftpConfig.excludes` will be invalid.**
   + **ftpConfig.servers**:  
     Default is `null`, if you want to use ftp server, you must be set it.
     + **ftpConfig.servers.<CUSTOM_ENV_NAME>**:  

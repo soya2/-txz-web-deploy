@@ -5,10 +5,14 @@ import defaultConfig from "./default.config.js";
 
 export class Config {
   _deployEnv = "";
+  /**
+   * @type {TxzDeployConfiguration}
+   * @private
+   */
   _config = {};
 
   /**
-   * @param {Object} configObject
+   * @param {TxzDeployConfiguration} configObject
    */
   constructor(configObject = defaultConfig) {
     this._config = configObject;
@@ -62,7 +66,7 @@ export class Config {
 
   /**
    * get user configuration through file name 'txzDeploy.config.js'
-   * @returns {Promise<Object>}
+   * @returns {Promise<TxzDeployConfiguration>}
    */
   static async getConfig() {
     const targetConfigFilePath = path.resolve("txzDeploy.config.js")

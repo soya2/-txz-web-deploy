@@ -4,13 +4,16 @@ import {BaseServer} from "./base.js";
 import {decrypt} from "../utils/crypto.js";
 
 export class FTPServer extends BaseServer {
+  /**
+   * @type {FtpServers | null}
+   */
   config = null;
   client = null;
   isConnect = false;
 
   /**
    * init ftp server, use key decrypt server config
-   * @param {Object} config encrypt server config
+   * @param {FtpServers} config encrypt server config
    * @param {String} password decrypt key
    */
   constructor(config, password) {
@@ -21,14 +24,14 @@ export class FTPServer extends BaseServer {
 
   /**
    * init multiple ftp servers
-   * @param {Object | undefined} config encrypt server config
+   * @param {FtpConfiguration | undefined} config encrypt server config
    * @param {String} env env
    * @param {String} password decrypt key
    * @returns {FTPServer[]} ftp servers list
    */
   static createClients(config, env, password) {
     const list = [];
-    if (config === undefined) {
+    if (config === undefined || config.servers === null) {
       return list;
     }
     for (const server of config.servers[env]) {
@@ -41,9 +44,9 @@ export class FTPServer extends BaseServer {
 
   /**
    * decrypt server config
-   * @param {Object} encryptConfig encrypt server config
+   * @param {FtpServers} encryptConfig encrypt server config
    * @param {String} password decrypt key
-   * @returns {Object | null} server config
+   * @returns {FtpServers | null} server config
    */
   decryptConfig(encryptConfig, password) {
     try {
