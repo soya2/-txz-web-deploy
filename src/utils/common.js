@@ -1,8 +1,9 @@
 /**
  * deep merge newObj to target object
- * @param {Object} targetObject target object
- * @param {Object} newObj will be merged to target object
- * @returns {Object}
+ * @template T
+ * @param {T} targetObject target object
+ * @param {T} newObj will be merged to target object
+ * @returns {T}
  */
 export function deepMerge(targetObject, newObj) {
   const mergedObject = {...targetObject};

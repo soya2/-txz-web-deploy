@@ -7,13 +7,13 @@ export class OssServer extends BaseServer {
   client = null;
   remotePath = "";
   /**
-   * @type {Function | undefined}
+   * @type {UploadFunction | undefined}
    */
   beforeUpload = undefined;
 
   /**
    * init oss server
-   * @param {Object=} config oss server config
+   * @param {OssConfiguration=} config oss server config
    */
   constructor(config) {
     super("OSS")
